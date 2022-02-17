@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYB</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1>Know Your Balance</h1>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <img src="" alt="">
+            </div>
+            
+            <div>
+                <form>
+                    <h3>Income</h3>
+                    <label>Income: </label>
+                    <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="income-input">
+                    <h3>Expenses</h3>
+                    <label>Food: </label>
+                    <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="food-input">
+                    <br>
+                    <label>Rent: </label>
+                    <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="rent-input">
+                    <br>
+                    <label>Clothes: </label>
+                    <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="clothes-input">
+                </form>
+                <button id="calculate-btn">Calculate</button>
+
+                <h3>Total Expense:$ <span id="totalExpense">00</span></h3>
+                <h3>Balance:$ <span id="balance">00</span></h3>
+
+                <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="saving-input"> %
+                <button id="saving-btn">Save</button>
+
+                <h3>Saving Amount: <span id="savingAmount">00</span></h3>
+                <h3>Remaining Balance: <span id="remainingAmount">00</span> </h3>
+
+                <button id="reset">Reset All</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
