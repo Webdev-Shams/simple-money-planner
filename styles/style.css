@@ -5,6 +5,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.balance {
+  color: orangered;
+}
+
 form {
   background-color: #14636e;
   color: white;
@@ -13,4 +17,9 @@ form {
 input {
   background-color: #7db5bd;
   color: rgb(39, 39, 39);
+}
+
+button {
+  /* background-color: ; */
+  padding: 30px;
 }
