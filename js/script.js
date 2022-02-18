@@ -15,6 +15,17 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
     
     let balance = document.getElementById('balance');
     balance.innerText = newBalance;
+
+    if(allExpenses > newBalance){
+        balance.innerText = newBalance;
+        alert('Whoa! Spend carefully!');
+
+    }
+    else{
+    balance.innerText = newBalance;
+    }
+
+    
 });
 
 // saving and remaining balance
