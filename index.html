@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KYB</title>
 
+    <link rel="stylesheet" href="styles/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
+    <header class="text-center my-9">
         <h1 class="text-4xl font-bold">Know Your Balance</h1>
     </header>
 
@@ -19,31 +20,33 @@
                 <!-- <img src="image/money.jpg" alt="" class="w-full"> -->
             </div>
             
-            <div>
-                <form>
-                    <h3>Income</h3>
-                    <label>Income: </label>
-                    <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="income-input">
-                    <h3>Expenses</h3>
-                    <label>Food: </label>
-                    <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="food-input">
+            <div class="form-div rounded-lg lg:py-5 py-8 lg:px-9 px-5 lg:mr-5 lg:mb-5">
+                <form >
+                    <!-- income -->
+                    <h3 class="text-2xl lg:text-3xl	mb-2 underline decoration-auto font-semibold">Income</h3>
+                    <label class="lg:text-lg sm:text-base">Income: </label>
+                    <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="income-input" class="rounded mb-8 w-full">
+                    <!-- expenses -->
+                    <h3 class="text-2xl lg:text-3xl mb-2 underline decoration-auto font-semibold">Expenses</h3>
+                    <label class="lg:text-lg sm:text-base">Food: </label>
+                    <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="food-input" class="rounded mb-5 w-full">
                     <br>
-                    <label>Rent: </label>
-                    <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="rent-input">
+                    <label class="lg:text-lg sm:text-base">Rent: </label>
+                    <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="rent-input" class="rounded mb-5 w-full">
                     <br>
-                    <label>Clothes: </label>
-                    <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="clothes-input">
+                    <label class="lg:text-lg sm:text-base">Clothes: </label>
+                    <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="clothes-input" class="rounded mb-5 w-full">
                 </form>
                 <button id="calculate-btn">Calculate</button>
 
-                <h3>Total Expense:$ <span id="totalExpense">00</span></h3>
-                <h3>Balance:$ <span id="balance">00</span></h3>
+                <h3 class="text-lg font-semibold">Total Expense: $ <span id="totalExpense">00</span></h3>
+                <h3 class="text-lg font-semibold">Balance: $ <span id="balance">00</span></h3>
 
-                <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="saving-input"> %
+                <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="saving-input" class="rounded my-5 w-2/4 my-5"> %
                 <button id="saving-btn">Save</button>
 
-                <h3>Saving Amount: <span id="savingAmount">00</span></h3>
-                <h3>Remaining Balance: <span id="remainingAmount">00</span> </h3>
+                <h3 class="text-lg font-semibold">Saving Amount: $ <span id="savingAmount">00</span></h3>
+                <h3 class="text-lg font-semibold">Remaining Balance: $ <span id="remainingAmount">00</span> </h3>
 
                 <button id="reset">Reset All</button>
             </div>
