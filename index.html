@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>KYB</title>
 
     <link rel="stylesheet" href="styles/style.css">
@@ -16,11 +17,11 @@
 
     <main>
         <section class="grid lg:grid-cols-2 sm:grid-cols-1 gap-5">
-            <div class="lg:ml-5">
-                <img src="image/money.png" alt="" class="w-3/4 lg:w-2/4">
+            <div class="lg:ml-5 mx-4">
+                <img src="image/money.png" alt="" class="w-3/4 lg:w-3/4">
             </div>
             
-            <div class="form-div">
+            <div class="form-div mx-4 mb-5">
                 <form class="rounded-lg lg:py-5 py-8 lg:px-9 px-5 lg:mr-5 lg:mb-5">
                     <!-- income -->
                     <h3 class="text-2xl lg:text-3xl	mb-2 underline decoration-auto font-semibold">Income</h3>
@@ -37,18 +38,18 @@
                     <label class="lg:text-lg sm:text-base">Clothes: </label>
                     <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="clothes-input" class="rounded mb-5 w-full">
 
-                    <button id="calculate-btn">Calculate</button>
+                    <button type="button" id="calculate-btn">Calculate</button>
 
                     <h3 class="text-lg font-semibold">Total Expense: $ <span id="totalExpense">00</span></h3>
                     <h3 class="text-lg font-semibold">Balance: $ <span id="balance">00</span></h3>
 
                     <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="saving-input" class="rounded my-5 w-2/4 my-5"> %
-                    <button id="saving-btn">Save</button>
+                    <button type="button" id="saving-btn">Save</button>
 
                     <h3 class="text-lg font-semibold">Saving Amount: $ <span id="savingAmount">00</span></h3>
                     <h3 class="text-lg font-semibold">Remaining Balance: $ <span id="remainingAmount">00</span> </h3>
 
-                    <button id="reset">Reset All</button>
+                    <button type="button" id="reset">Reset All</button>
                 </form>
             </div>
         </section>

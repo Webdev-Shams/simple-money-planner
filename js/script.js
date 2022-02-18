@@ -7,7 +7,7 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
     const clothesInputField = parseInt(document.getElementById('clothes-input').value);
 
     const allExpenses = foodInputField + rentInputField + clothesInputField;
-    
+
     const newBalance = incomeInputField - allExpenses;
 
     const totalExpenseText = document.getElementById('totalExpense');
@@ -50,10 +50,10 @@ document.getElementById('reset').addEventListener('click', function() {
     document.getElementById('rent-input').value = ' ';
     document.getElementById('clothes-input').value = ' ';
     document.getElementById('saving-input').value = ' ';
-    document.getElementById('totalExpense').innerText = ' ';
-    document.getElementById('balance').innerText = ' ';
-    document.getElementById('savingAmount').innerText = ' ';
-    document.getElementById('remainingAmount').innerText = ' ';
+    document.getElementById('totalExpense').innerText = '00';
+    document.getElementById('balance').innerText = '00';
+    document.getElementById('savingAmount').innerText = '00';
+    document.getElementById('remainingAmount').innerText = '00';
 
 });
 
