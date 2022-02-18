@@ -15,13 +15,13 @@
     </header>
 
     <main>
-        <section class="grid lg:grid-cols-2 sm:grid-cols-1 gap-1">
-            <div>
-                <!-- <img src="image/money.jpg" alt="" class="w-full"> -->
+        <section class="grid lg:grid-cols-2 sm:grid-cols-1 gap-5">
+            <div class="lg:ml-5">
+                <img src="image/money.png" alt="" class="w-3/4 lg:w-2/4">
             </div>
             
-            <div class="form-div rounded-lg lg:py-5 py-8 lg:px-9 px-5 lg:mr-5 lg:mb-5">
-                <form >
+            <div class="form-div">
+                <form class="rounded-lg lg:py-5 py-8 lg:px-9 px-5 lg:mr-5 lg:mb-5">
                     <!-- income -->
                     <h3 class="text-2xl lg:text-3xl	mb-2 underline decoration-auto font-semibold">Income</h3>
                     <label class="lg:text-lg sm:text-base">Income: </label>
@@ -36,19 +36,20 @@
                     <br>
                     <label class="lg:text-lg sm:text-base">Clothes: </label>
                     <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="clothes-input" class="rounded mb-5 w-full">
+
+                    <button id="calculate-btn">Calculate</button>
+
+                    <h3 class="text-lg font-semibold">Total Expense: $ <span id="totalExpense">00</span></h3>
+                    <h3 class="text-lg font-semibold">Balance: $ <span id="balance">00</span></h3>
+
+                    <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="saving-input" class="rounded my-5 w-2/4 my-5"> %
+                    <button id="saving-btn">Save</button>
+
+                    <h3 class="text-lg font-semibold">Saving Amount: $ <span id="savingAmount">00</span></h3>
+                    <h3 class="text-lg font-semibold">Remaining Balance: $ <span id="remainingAmount">00</span> </h3>
+
+                    <button id="reset">Reset All</button>
                 </form>
-                <button id="calculate-btn">Calculate</button>
-
-                <h3 class="text-lg font-semibold">Total Expense: $ <span id="totalExpense">00</span></h3>
-                <h3 class="text-lg font-semibold">Balance: $ <span id="balance">00</span></h3>
-
-                <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' id="saving-input" class="rounded my-5 w-2/4 my-5"> %
-                <button id="saving-btn">Save</button>
-
-                <h3 class="text-lg font-semibold">Saving Amount: $ <span id="savingAmount">00</span></h3>
-                <h3 class="text-lg font-semibold">Remaining Balance: $ <span id="remainingAmount">00</span> </h3>
-
-                <button id="reset">Reset All</button>
             </div>
         </section>
     </main>
