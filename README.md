@@ -1,2 +1,2 @@
 # simple-money-planner
-# Live Link : https://app.netlify.com/sites/elegant-fermat-54fbb2
+# Live Link : https://eloquent-wiles-b9a0e1.netlify.app/
